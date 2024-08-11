@@ -1,0 +1,9 @@
+Json {
+  key:axeronCode = 25080901;
+  key:title = "UPDATE";
+  key:subtitle = "You need update";
+  key:btnVisible = true;
+  key:btnText = "Update";
+  key:url = "https://sfl.gl/V6spDae";
+  key:cancelable = false;
+}
