@@ -4,7 +4,7 @@ local verName="V1.1"
 local version=11
 local pid="[$$]"
 local p="[-]"
-local fcore="https://fahrez256.github.io/game-storm/full/core.sh"
+local fcore="https://ihyakdg.github.io/game-storm/full/core.sh"
 local id="$(settings get secure android_id)"
 local trim_id="${id:0:6}"
 log_path="/sdcard/Android/data/${AXERONPKG}/files"
@@ -51,7 +51,7 @@ converted_time=$(time_conv $time_diff "no cooldown")
 
 case $1 in
   --help | -h )
-    storm -x "https://fahrez256.github.io/game-storm/full/help.sh" -fn "help" "$@"
+    storm -x "https://ihyakdg.github.io/game-storm/full/help.sh" -fn "help" "$@"
     exit 0
     ;;
   --info | -i )
@@ -63,7 +63,7 @@ case $1 in
     exit 0
     ;;
   --changelogs | -cl )
-    storm -x "https://fahrez256.github.io/game-storm/full/changelogs.sh" -fn "changelogs" "$@"
+    storm -x "https://ihyakdg.github.io/game-storm/full/changelogs.sh" -fn "changelogs" "$@"
     exit 0
     ;;
   --no-cooldown | -ncd )
