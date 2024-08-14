@@ -11,7 +11,7 @@ host_path="/Laxeron/Core_2404.txt"
 id_path="/Laxeron/Id_2404.txt"
 log_path="/sdcard/Android/data/${axeron}/files"
 log_file="${log_path}/log.txt"
-this_core=$(dumpsys package ${axeron} | grep "signatures" | cut -d '[' -f 2 | cut -d ']' -f 1)
+#this_core=$(dumpsys package ${axeron} | grep "signatures" | cut -d '[' -f 2 | cut -d ']' -f 1)
 vCode=4100
 vName="V4.2 ShellStorm"
 vAxeron=10240121
@@ -75,17 +75,16 @@ optimize_app() {
 		fi
 	done
 }
-
-echo ""
-if [ "$AXERON" ]; then
-	if ! echo "$CORE" | grep -q "$this_core"; then
-		echo "$w You must use the original version of Axeron"
-		join_channel
-		c_exit
-	fi
-else
+2
+#echo ""
+#if [ "$AXERON" ]; then
+	#if ! echo "$CORE" | grep -q "$this_core"; then
+		#echo "$w You must use the original version of Axeron"
+		#join_channel
+		#c_exit
+	#fi
+#else
 	PACKAGES=$(cmd package list packages -3 | sed 's/package://')
-fi
 
 if [ -z "$runPackage" ]; then
 	echo "$w PackageName is empty" && c_exit
